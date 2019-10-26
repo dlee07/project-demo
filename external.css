@@ -1,0 +1,172 @@
+body, html {
+  font-family: sans-serif;
+  background-color: #b0edf5;
+}
+h1 {
+  color: #FF9B42;
+  font-size: 36px;
+  text-align: center;
+}
+nav {
+  position: fixed;
+  background-color: #254E70;
+  border: solid 3px #FF9B42;
+  font-family: sans-serif;
+  padding: 5px 0;
+  text-align: center;
+  width: 100%;
+}
+nav a {
+  color: #FFF;
+  font-size: 19px;
+  text-decoration: none;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 80px;
+  margin-right: 80px;
+  display: inline-block;
+}
+nav ul {
+  text-decoration: none;
+  list-style-type: circle;
+  list-style-position: inside
+}
+nav ul li {
+  text-decoration: none;
+  display: inline-block;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+.city_column{
+    float: left; width: 33.33%; padding: 5px;
+}
+
+div.city_name{
+    padding: 15px;
+    text-align: center;
+}
+
+.rowDestinations
+{
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.responsiveDestinations {
+   width: 70%;
+   height: 35%;
+   margin: 7px;
+   margin-top: 60px;
+   border-radius: 5px;
+   border-style: groove;
+   border-color: #000;
+}
+
+@media only screen and (min-width: 850px) {
+   .responsiveDestinations
+   {
+       width: 45%;
+       height: 35%;
+       margin-left: 7px;
+       margin-top: 60px;
+       border-radius: 5px;
+       border-style: groove;
+       border-color: #000;
+    }
+    .rowDestinations {
+       display: inline-block;
+       margin-left: auto;
+       margin-right: auto;
+       height: 35%;
+    }
+}
+
+header {
+  z-index: 10;
+  background-color: #254E70;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+footer {
+  position: fixed;
+  width: 100%;
+  font-size: 16px;
+  background-color: #b0edf5;
+  bottom: 0;
+  left: 2px;
+  right: 0;
+}
+
+.currentTab {
+  color: #FF9B42;
+}
+
+.notCurrentTab:hover {
+  color: #FF9B42;
+}
